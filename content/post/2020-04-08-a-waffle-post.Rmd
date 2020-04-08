@@ -1,0 +1,8 @@
+---
+title: A waffle post
+author: ~
+date: '2020-04-08'
+slug: a-waffle-post
+categories: []
+tags: []
+---
