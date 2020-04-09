@@ -1,0 +1,23 @@
+---
+title: Using R Markdown
+author: Stringr Belle
+date: '2020-04-09'
+slug: using-r-markdown
+categories: []
+tags: []
+---
+
+
+
+<p>This section is written in markdown. It is used primarily for discussion, explanation etc.</p>
+<p>First let’s load package.</p>
+<pre class="r"><code>library(tidyverse)
+library(slumdown)</code></pre>
+<p>This would usually be about waffles… but I will do something about cars and the <code>mpg</code> data frame.</p>
+<pre class="r"><code>pic &lt;- ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y = hwy)) +
+  theme_slum(palette = &quot;kunoichi&quot;) +
+  xlab(&quot;Engline Displacement&quot;) +
+  ylab(&quot;Highway Mileage&quot;)</code></pre>
+<p>The above chunk has creased the <code>pic</code> variable. To draw the plot, need to include the R command <code>print(pic)</code>.</p>
+<p><img src="/post/2020-04-09-using-r-markdown_files/figure-html/plot-1.png" width="672" /></p>
